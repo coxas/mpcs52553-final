@@ -1,3 +1,25 @@
+Donation
+    user_id: integer
+    amount: integer
+    message: text
+    card_number: integer
+    created_at: datetime
+    updated_at: datetime
+
+History
+    user_id: integer
+    donation_id: integer
+    amount: integer
+    card_number: integer
+
+User
+    name: text
+    email: text
+    password_digest: text
+    created_at: datetime
+    updated_at: datetime
+
+
 # This file allows you to specify your domain model
 # in .yml format.  Use `rails db:migrate` to apply your
 # specification to your development database.

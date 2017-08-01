@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Change This Title</title>
+    <title>RuPaul for Senate 2020</title>
     <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag '/../../public/rupaul.css' %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
 
   <body>
-    <%= yield %>
+    <h1>RuPaul for U.S. Senate 2020</h1>
+    <%= render 'layouts/navbar' %>
+
+    <div class="container">
+        <%= yield %>
+    </div>
   </body>
 </html>

@@ -12,4 +12,31 @@
 
 ActiveRecord::Schema.define(version: 0) do
 
+  create_table "donations", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "amount"
+    t.text "message"
+    t.integer "card_number"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["user_id"], name: "index_donations_on_user_id"
+  end
+
+  create_table "histories", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "donation_id"
+    t.integer "amount"
+    t.integer "card_number"
+    t.index ["donation_id"], name: "index_histories_on_donation_id"
+    t.index ["user_id"], name: "index_histories_on_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.text "name"
+    t.text "email"
+    t.text "password_digest"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
 end
