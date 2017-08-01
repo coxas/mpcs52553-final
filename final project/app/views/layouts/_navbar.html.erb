@@ -1,8 +1,8 @@
-<div class="container">
     <nav class="navbar-default">
+
         <ul class="josefin">
             <% if session["user_id"].present? %>
-                <% user = User.find_by[id: session["user_id"]] %>
+                <% user = User.find_by_id(session["user_id"]) %>
                 <li>Welcome, <%= user.name %> </li>   
                 <li><%= link_to 'Your Donation History', "/history" %></li>
                 <li></li>
@@ -11,7 +11,6 @@
                 <li><%= link_to "Sign Up", "/users/new" %></li>
                 <li><%= link_to "Sign In", "/sessions/new" %></li>
             <% end %>
-            <li>DONATE</li>
+            <li id="donate"><%= link_to 'DONATE', "/donations/new" %> </li>
         </ul>
     </nav>
-</div>

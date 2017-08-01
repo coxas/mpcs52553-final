@@ -3,16 +3,21 @@
   <head>
     <title>RuPaul for Senate 2020</title>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag '/../../public/rupaul.css' %>
+    <!-- Bootstrap for defaults -->
+    <%= stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'%>
+    <!-- Google Font -->
+    <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Open+Sans' %>
+    <!-- Custrom CSS -->
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+
   </head>
 
   <body>
-    <h1>RuPaul for U.S. Senate 2020</h1>
+    <img src="/../assets/rupaul_senate.png" width="100%">
     <%= render 'layouts/navbar' %>
 
-    <div class="container">
+    <div class="dark_background" class="container">
         <%= yield %>
     </div>
   </body>

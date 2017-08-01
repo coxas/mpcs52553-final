@@ -1,0 +1,19 @@
+<div class="row">
+
+  <% @donations.each do |d| %>
+
+  <!-- Product Thumbnail -->
+  <div class="col-sm-6 col-md-3">
+        <h4><%= link_to d.amount, "/donations/#{d.id}"%></h4>
+
+        <p>Donation amount: $<%= d.amount %>
+        <p>Donated by: <%= d.user_id %></p>
+        <p>Message: <%= d.message %> </p>
+
+       
+      </div>
+    </div>
+  </div>
+
+  <% end %>
+</div>

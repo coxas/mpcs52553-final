@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    margin: 0px !important;
+    font-family: 'Open Sans', sans-serif;
+}
+ul {
+    background-color: #fff;
+    padding-left: 10px;
+}
+li {
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 30px;
+    color: #2F4994;
+}
+#donate {
+    float: right;
+}
+.dark_background {
+    background-color: #2F4994;
+    padding-top: 10px;
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+.left_padding {
+    padding-left: 30px;
+}
+
