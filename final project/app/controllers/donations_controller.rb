@@ -18,7 +18,7 @@ class DonationsController < ApplicationController
     @donation.message = params["message"]
     @donation.card_number = params["card_number"]
     @donation.user = params["user_name"]
-
+    
     if @donation.save
       redirect_to "/donations", notice: 'Thank you for your donation. 
       Every dollar helps get RuPaul to the U.S. Senate.'

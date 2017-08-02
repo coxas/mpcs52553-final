@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   post '/sessions' => 'sessions#create'
 
   get '/donations/new' => 'donations#new'
-
+  
   delete '/logout' => 'sessions#destroy'
 
   get '/history' => 'histories#index'
