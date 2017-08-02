@@ -4,9 +4,9 @@ class DonationsController < ApplicationController
     @donations = Donation.all
   end
 
-  def show 
-    @donation = Donation.find_by(id: params["id"])
-  end 
+  # def show 
+  #   @donation = Donation.find_by(id: params["id"])
+  # end 
 
   def new 
     @donation = Donation.new
@@ -17,7 +17,7 @@ class DonationsController < ApplicationController
     @donation.amount = params["amount"]
     @donation.message = params["message"]
     @donation.card_number = params["card_number"]
-    @donation.user = params["user_id"]
+    @donation.user = params["user_name"]
 
     if @donation.save
       redirect_to "/donations", notice: 'Thank you for your donation. 

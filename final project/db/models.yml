@@ -1,5 +1,5 @@
 Donation
-    user_id: integer
+    user_name: text
     amount: integer
     message: text
     card_number: integer
@@ -7,7 +7,7 @@ Donation
     updated_at: datetime
 
 History
-    user_id: integer
+    user_name: text
     donation_id: integer
     amount: integer
     card_number: integer

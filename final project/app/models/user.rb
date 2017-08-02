@@ -1,12 +1,9 @@
 class User < ApplicationRecord
-validates :name, presence: true
+  validates :name, presence: true
   validates :email, presence: true
   
   has_many :histories
-
-  # def orders
-  #   Order.where(user_id: self.id)
-  # end
+  has_many :donations
 
   has_secure_password
 

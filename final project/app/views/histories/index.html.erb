@@ -1,0 +1,12 @@
+<div class="row dark_background left_padding center">
+  <h2>Your Donation History</h2>
+  
+  <% @histories.each do |h| %>
+
+        <h4><span class="underline"><%="Donation \##{h.id}" %></span></h4>
+        <p class="top_padding">Donation amount: $<%= h.amount %></p>
+        <p>Donated by: <%= h.user_name %></p>
+        <p class="skinny">Message: "<%= h.message %>" </p>
+
+  <% end %>
+</div>

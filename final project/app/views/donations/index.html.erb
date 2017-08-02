@@ -1,19 +1,12 @@
-<div class="row">
-
+<div class="row dark_background left_padding center">
+  <h2>Recent Donations</h2>
+  <h3 class="bottom_padding">Donate to see your name and message here!</h3>
   <% @donations.each do |d| %>
 
-  <!-- Product Thumbnail -->
-  <div class="col-sm-6 col-md-3">
-        <h4><%= link_to d.amount, "/donations/#{d.id}"%></h4>
-
-        <p>Donation amount: $<%= d.amount %>
-        <p>Donated by: <%= d.user_id %></p>
-        <p>Message: <%= d.message %> </p>
-
-       
-      </div>
-    </div>
-  </div>
+        <h4><span class="underline"><%="Donation \##{d.id}" %></span></h4>
+        <p class="top_padding">Donation amount: $<%= d.amount %></p>
+        <p>Donated by: <%= d.user_name %></p>
+        <p class="skinny">Message: "<%= d.message %>" </p>
 
   <% end %>
 </div>
