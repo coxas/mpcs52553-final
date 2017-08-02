@@ -10,7 +10,7 @@ History
     user_name: text
     donation_id: integer
     amount: integer
-    card_number: integer
+    card_number: text
 
 User
     name: text

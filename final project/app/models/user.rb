@@ -5,6 +5,8 @@ class User < ApplicationRecord
   has_many :histories
   has_many :donations
 
+  
+
   has_secure_password
 
   # 1. Expects a column named password_digest
