@@ -19,9 +19,7 @@ class UsersController < ApplicationController
     @user = User.find_by(id: params["id"])
 
     if @user.present? && @user.id == session["user_id"]
-      @histories = @user.histories
-    else
-      redirect_to root_url, notice: "Unknown"
+      histories = Donation.where(user_id: @user.id)
     end
   end
 

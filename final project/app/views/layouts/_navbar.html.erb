@@ -5,7 +5,7 @@
                 <% user = User.find_by_id(session["user_id"]) %>
                 <li>Welcome, <%= user.name %> </li>
                 <li><%= link_to 'Home', "/" %> </li>   
-                <li><%= link_to 'Your Donation History', "/history" %></li>
+                <li><%= link_to 'Your Donation History', "/users/show" %></li>
                 <li><%=link_to "Sign Out", "/logout", method: :delete %></li>
             <% else %>
                 <li><%= link_to 'Home', "/" %> </li>   
