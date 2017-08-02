@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/sessions/new' => 'sessions#new', as: 'new_session'
   post '/sessions' => 'sessions#create'
 
-  get '/donations/new' => 'donations#new'
+  # get '/donations/new' => 'donations#new'
   
   delete '/logout' => 'sessions#destroy'
 

@@ -1,21 +1,21 @@
 Donation
-    user_name: text
+    user_id: integer
     amount: integer
     message: text
-    card_number: integer
+    card_number: string
     created_at: datetime
     updated_at: datetime
 
 History
-    user_name: text
+    user_id: integer
     donation_id: integer
     amount: integer
-    card_number: text
+    card_number: string
 
 User
-    name: text
-    email: text
-    password_digest: text
+    name: string
+    email: string
+    password_digest: string
     created_at: datetime
     updated_at: datetime
 
