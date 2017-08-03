@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   # get '/donations/new' => 'donations#new'
 
-  get 'user/show' => 'users#show'
+  # get 'user/show' => 'users#show'
 
   delete '/logout' => 'sessions#destroy'
 
