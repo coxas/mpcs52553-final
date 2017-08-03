@@ -37,7 +37,7 @@ li {
 }
 .dark_background {
     background-color: #2F4994;
-    padding-top: 10px;
+    /*padding-top: 10px;*/
     color: #ffffff;
     padding-bottom: 30px;
     overflow-y: hidden;
@@ -76,6 +76,14 @@ li {
     #donate {
         float: none;
     }
+}
+#notice {
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: #849adb;
+    text-align: center;
 }
 
 
