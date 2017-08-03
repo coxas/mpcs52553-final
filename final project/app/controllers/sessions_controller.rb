@@ -12,10 +12,10 @@ class SessionsController < ApplicationController
         session["user_id"] = u.id
         redirect_to "/", notice: "Welcome back, #{u.name}!"
       else
-        redirect_to "/sessions/new", alert: "Bad password"
+        redirect_to "/sessions/new", notice: "Incorrect password! Try again."
       end
     else
-      redirect_to "/sessions/new", alert: "Unknown user"
+      redirect_to "/sessions/new", notice: "Unknown user--trying signing up instead!"
     end
 
   end
