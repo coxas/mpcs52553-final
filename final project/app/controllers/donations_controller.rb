@@ -4,9 +4,9 @@ class DonationsController < ApplicationController
     @donations = Donation.all
   end
 
-  # def show 
-  #   @donation = Donation.find_by(id: params["id"])
-  # end 
+  def show 
+    @donation = Donation.find_by(id: params["id"])
+  end 
 
   def new 
     @donation = Donation.new
@@ -23,7 +23,8 @@ class DonationsController < ApplicationController
       redirect_to "/donations", notice: 'Thank you for your donation. 
       Every dollar helps get RuPaul to the U.S. Senate.'
     else
-      # render "new"
+      redirect_to "/donations/new", notice: 'Your donation didn\'t go through.
+      Please try again.'
     end
   end
 
@@ -34,7 +35,7 @@ class DonationsController < ApplicationController
 
   def update
     @donation = Donation.find_by(id: params["id"])
-    @donation.message = params ["message"]
+    @donation.message = params["message"]
     if @donation.save
       redirect_to "/donations/#{@donation.id}", notice: "Your message to RuPaul has been updated."
     else 

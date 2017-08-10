@@ -9,6 +9,7 @@
         <p class="top_padding">Donation amount: $<%= h.amount %></p>
         <p>Donated by: <%= h.user.name %></p>
         <p class="skinny">Message: "<%= h.message %>" </p>
+        <p> <%= link_to "Edit your message", "/donations/#{h.id}/edit" %> </p>
         <%= form_tag("/history", method: '') do  %>
           <div class="form-group">
             <%= hidden_field_tag :donation_id, h.id %>

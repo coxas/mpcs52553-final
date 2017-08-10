@@ -3,7 +3,7 @@
   <h3 class="bottom_padding">Donate to see your name and message here!</h3>
   <% @donations.each do |d| %>
 
-        <h4><span class="underline"><%="Donation \##{d.id}" %></span></h4>
+        <h4><span class="underline"><%= link_to "Donation \##{d.id}", "/donations/#{d.id}"%></a></span></h4>
         <p class="top_padding">Donation amount: $<%= d.amount %></p>
         <p>Donated by: <%= d.user.name %></p>
         <p class="skinny">Message: "<%= d.message %>" </p>

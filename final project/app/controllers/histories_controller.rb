@@ -9,6 +9,7 @@ class HistoriesController < ApplicationController
         end
     end
 
+
     def index
         @histories = Donation.where(user_id: @user.id)
     end 
