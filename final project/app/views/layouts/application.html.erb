@@ -14,7 +14,12 @@
   </head>
 
   <body>
-    <img src="/../assets/rupaul_senate.png" width="100%">
+    <div id="imagewrap">
+      <a href="/help"><input type="button" class="button" value="User Stories"/></a>
+
+      <img src="/../assets/rupaul_senate.png" width="100%">
+    </div>
+
     <%= render 'layouts/navbar' %>
 
     <div class="dark_background" class="container">
@@ -24,4 +29,7 @@
         <%= yield %>
     </div>
   </body>
+  <footer>
+    <p id="copyright">&copy; Alyssa Cox 2017</p>
+  </footer>
 </html>

@@ -39,7 +39,7 @@ class DonationsController < ApplicationController
     if @donation.save
       redirect_to "/donations/#{@donation.id}", notice: "Your message to RuPaul has been updated."
     else 
-      # render "edit"
+      render "edit", notice: "Oops, something went wrong. Please try again!"
     end 
   end 
 
