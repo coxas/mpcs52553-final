@@ -105,6 +105,7 @@ li {
     text-align: left;
 }
 
+/*I know, I know, mobile first, but I was lazy*/
 @media only screen and (max-width: 1000px) {
     li {
         display: block;
