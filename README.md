@@ -3,15 +3,6 @@ Final Project
 
 Files are in the final project folder. Not sure why there is an extra folder layer. 
 
-Testing: 
-Here are test accounts that have been created and are in the database. 
-1) email: zodiac_killer@tedcruz.com 
-   password: tedcruz
-2) email: orangeboi69@trump.com
-   password: orangeboi
-3) email: hillary@butheremails.com
-   password: hillary
-
 User Stories (also available at /help):
 
 Home Page:
