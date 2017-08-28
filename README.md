@@ -1,5 +1,5 @@
 # mpcs52553-final
-Final Project 
+Final Project for Introduction to Web Development, Summer 2017
 
 Files are in the final project folder. Not sure why there is an extra folder layer. 
 
